@@ -26,16 +26,24 @@
     <p>Sol Quotes collects minimal data to provide its services:</p>
     <p><strong>Wallet Information:</strong> If you choose to connect your Solana wallet using Sign In With Solana (SIWS), your public wallet address is stored locally on your device. We do not transmit wallet data to any external server.</p>
     <p><strong>Preferences:</strong> Your app settings (notification preferences, favorite quotes, category preferences) are stored locally on your device.</p>
-    <p><strong>Location Data:</strong> Approximate location may be used solely for regulatory compliance (geo-blocking sanctioned regions). This data is not stored or transmitted.</p>
+    <p><strong>Location Data:</strong> Approximate location (coarse location only) may be used solely for regulatory compliance to geo-block sanctioned and restricted regions. This data is processed on-device, is not stored, and is never transmitted to any server.</p>
 
     <h2>Information We Do Not Collect</h2>
-    <p>We do not collect personal information, usage analytics, browsing history, contacts, photos, or any other sensitive data. We do not use third-party analytics or advertising services.</p>
+    <p>We do not collect personal information, usage analytics, browsing history, contacts, photos, or any other sensitive data. We do not use third-party analytics, advertising, or tracking services.</p>
 
     <h2>Data Storage</h2>
-    <p>All data is stored locally on your device using Android SharedPreferences. Wallet data is encrypted using Android EncryptedSharedPreferences where available.</p>
+    <p>All data is stored locally on your device using Android SharedPreferences. Wallet data is encrypted using Android EncryptedSharedPreferences where available, with a fallback to standard SharedPreferences on devices where encryption is unavailable.</p>
 
     <h2>Third-Party Services</h2>
-    <p>Sol Quotes connects to the Solana blockchain (mainnet-beta) solely for SGT (Seeker Genesis Token) verification when you connect your wallet. No personal data is transmitted in this process.</p>
+    <p>Sol Quotes connects to the Solana blockchain (mainnet-beta) solely for SGT (Seeker Genesis Token) verification when you connect your wallet. No personal data is transmitted in this process. The only data sent is your public wallet address to verify token ownership.</p>
+
+    <h2>Permissions</h2>
+    <p><strong>Internet:</strong> Required for Solana wallet connection and SGT verification only.</p>
+    <p><strong>Approximate Location:</strong> Used on-device only for regulatory geo-blocking compliance. Not stored or transmitted.</p>
+    <p><strong>Notifications:</strong> Used to deliver scheduled inspirational quotes. You control the frequency (daily, weekly, monthly, or off) in Settings.</p>
+
+    <h2>Region Restrictions</h2>
+    <p>Sol Quotes is not available in countries and territories subject to comprehensive sanctions by OFAC (U.S. Office of Foreign Assets Control), the European Union, or the United Nations, including but not limited to: Cuba, Iran, North Korea, Syria, Russia, Afghanistan, Belarus, Myanmar, Venezuela, Zimbabwe, Sudan, South Sudan, Somalia, Yemen, Libya, Democratic Republic of Congo, Central African Republic, Lebanon, Mali, Haiti, and Nicaragua. Access is also restricted in high-risk jurisdictions including Bosnia and Herzegovina, Burundi, Eritrea, Guinea, Guinea-Bissau, Iraq, and Chad.</p>
 
     <h2>Children's Privacy</h2>
     <p>Sol Quotes is not directed at children under 13. We do not knowingly collect information from children.</p>
