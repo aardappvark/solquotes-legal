@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanctions &amp; Restricted Regions - Sol Quotes</title>
+    <style>body { background-color: #0A0A0F; color: #CCCCCC; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 24px; line-height: 1.6; max-width: 800px; margin: 0 auto; } h1 { color: #9945FF; font-size: 28px; } h2 { color: #14F195; font-size: 20px; margin-top: 32px; } a { color: #00D4AA; } p { margin-bottom: 12px; } ul, ol { margin: 12px 0 16px 24px; } li { margin-bottom: 6px; } .back { margin-bottom: 24px; } .footer { margin-top: 48px; color: #666666; font-size: 12px; text-align: center; } table { width: 100%; border-collapse: collapse; margin: 16px 0; } th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #1a1a2e; } th { color: #14F195; } .warning { background: #2E1818; border-left: 3px solid #ff4444; padding: 16px; margin: 16px 0; border-radius: 4px; } .highlight { background: #18182E; border-left: 3px solid #9945FF; padding: 16px; margin: 16px 0; border-radius: 4px; } .green { background: #182E1E; border-left: 3px solid #14F195; padding: 16px; margin: 16px 0; border-radius: 4px; }</style>
+</head>
+<body>
+    <p class="back"><a href="index.html">&larr; Back to Sol Quotes Legal</a></p>
+
+    <h1>Sanctions &amp; Restricted Regions</h1>
+    <p><strong>Last updated:</strong> February 2026</p>
+
+    <div class="warning">
+        <p><strong>Important:</strong> Sol Quotes is not available in certain countries and regions due to international sanctions regulations. Access from restricted jurisdictions is prohibited.</p>
+    </div>
+
+    <p>MidMightBit Games is committed to complying with all applicable international sanctions laws and regulations. As an Australian-based developer, we are subject to Australian autonomous sanctions as well as broader international sanctions regimes. Sol Quotes implements geographic screening to ensure compliance.</p>
+
+    <h2>1. Regulatory Framework</h2>
+    <p>Sol Quotes&rsquo; sanctions compliance is designed to meet the requirements of the following authorities:</p>
+    <table>
+        <thead><tr><th>Authority</th><th>Full Name</th><th>Jurisdiction</th></tr></thead>
+        <tbody>
+            <tr><td><strong>OFAC</strong></td><td>Office of Foreign Assets Control</td><td>United States</td></tr>
+            <tr><td><strong>EU</strong></td><td>European Union</td><td>European Union</td></tr>
+            <tr><td><strong>UN</strong></td><td>United Nations Security Council</td><td>International</td></tr>
+            <tr><td><strong>OFSI</strong></td><td>Office of Financial Sanctions Implementation</td><td>United Kingdom</td></tr>
+            <tr><td><strong>DFAT</strong></td><td>Department of Foreign Affairs and Trade</td><td>Australia</td></tr>
+        </tbody>
+    </table>
+
+    <h2>2. Restricted Jurisdictions</h2>
+    <p>Sol Quotes is <strong>not available</strong> in the following countries and territories:</p>
+    <table>
+        <thead><tr><th>Country</th><th>ISO</th><th>Primary Sanctions Basis</th></tr></thead>
+        <tbody>
+            <tr><td>Russia</td><td>RU</td><td>OFAC, EU, UK, AU</td></tr>
+            <tr><td>Belarus</td><td>BY</td><td>EU, UK, AU</td></tr>
+            <tr><td>North Korea</td><td>KP</td><td>OFAC, EU, UK, AU, UN</td></tr>
+            <tr><td>Iran</td><td>IR</td><td>OFAC, EU, UK, AU</td></tr>
+            <tr><td>Syria</td><td>SY</td><td>OFAC, EU, UK, AU</td></tr>
+            <tr><td>Cuba</td><td>CU</td><td>OFAC</td></tr>
+            <tr><td>Venezuela</td><td>VE</td><td>OFAC</td></tr>
+            <tr><td>Myanmar</td><td>MM</td><td>OFAC, EU, UK, AU</td></tr>
+            <tr><td>Afghanistan</td><td>AF</td><td>OFAC, EU, UK, AU, UN</td></tr>
+            <tr><td>Sudan</td><td>SD</td><td>OFAC</td></tr>
+            <tr><td>South Sudan</td><td>SS</td><td>OFAC, EU, UK, AU, UN</td></tr>
+            <tr><td>Somalia</td><td>SO</td><td>OFAC, EU, UK, AU, UN</td></tr>
+            <tr><td>Libya</td><td>LY</td><td>OFAC, EU, UK, AU, UN</td></tr>
+            <tr><td>Central African Republic</td><td>CF</td><td>OFAC, EU, UK, UN</td></tr>
+            <tr><td>DR Congo</td><td>CD</td><td>OFAC, EU, UK, UN</td></tr>
+            <tr><td>Yemen</td><td>YE</td><td>OFAC, EU, UK, AU, UN</td></tr>
+            <tr><td>Zimbabwe</td><td>ZW</td><td>OFAC, EU</td></tr>
+            <tr><td>Nicaragua</td><td>NI</td><td>OFAC</td></tr>
+            <tr><td>Haiti</td><td>HT</td><td>OFAC, UN</td></tr>
+            <tr><td>Mali</td><td>ML</td><td>EU, UK, UN</td></tr>
+            <tr><td>Lebanon</td><td>LB</td><td>OFAC, EU, UK</td></tr>
+        </tbody>
+    </table>
+
+    <h2>3. Geographic Screening</h2>
+    <p>Sol Quotes performs on-device geographic screening at launch using the following signals (in priority order):</p>
+    <ol>
+        <li><strong>SIM Operator Country Code</strong> — mobile country code from the device&rsquo;s SIM</li>
+        <li><strong>Network Operator Country Code</strong> — country of the currently connected network</li>
+        <li><strong>Device Locale</strong> — country/region setting on the device</li>
+        <li><strong>Geocoder Reverse Lookup</strong> — if coarse location permission is granted</li>
+    </ol>
+    <div class="highlight">
+        <p><strong>Note:</strong> If <strong>any</strong> signal indicates a restricted jurisdiction, access will be blocked. A match on any single signal is sufficient.</p>
+    </div>
+
+    <h2>4. Privacy-Preserving Design</h2>
+    <div class="green">
+        <p><strong>Your privacy is protected.</strong> All geographic screening is performed entirely on-device. No location data or country codes are ever transmitted to any external server.</p>
+    </div>
+
+    <h2>5. User Representations</h2>
+    <p>By using Sol Quotes, you represent and warrant that you are not located in, ordinarily resident in, or a citizen or national of any restricted jurisdiction listed above, and that you are not on any applicable sanctions list.</p>
+
+    <h2>6. Circumvention Prohibited</h2>
+    <p>You must not use VPNs, proxies, or other technical means to circumvent Sol Quotes&rsquo; geographic restrictions. Doing so constitutes a violation of these terms and may result in termination of access.</p>
+
+    <h2>7. Updates</h2>
+    <p>This list may be updated at any time to reflect changes in international sanctions regimes. Continued use of Sol Quotes constitutes acceptance of the current restrictions.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about sanctions compliance, contact us at <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
+
+    <div class="footer">
+        <p>&copy; 2026 MidMightBit Games. All rights reserved.</p>
+    </div>
+</body>
+</html>
